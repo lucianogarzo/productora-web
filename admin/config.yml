@@ -4,3 +4,13 @@ backend:
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Video URL", name: "video", widget: "string" }
+      - { label: "Cover Image", name: "cover", widget: "image" }
