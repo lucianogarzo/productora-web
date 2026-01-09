@@ -2,28 +2,5 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "assets/images"
-public_folder: "/assets/images"
-
-collections:
-  - name: "proyectos"
-    label: "Proyectos"
-    folder: "content/proyectos"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Título (ES)", name: "title_es", widget: "string" }
-      - { label: "Title (EN)", name: "title_en", widget: "string" }
-
-      - { label: "Cliente", name: "client", widget: "string", required: false }
-      - { label: "Año", name: "year", widget: "number" }
-
-      - { label: "Vimeo ID", name: "vimeo", widget: "string" }
-
-      - { label: "Descripción (ES)", name: "description_es", widget: "text" }
-      - { label: "Description (EN)", name: "description_en", widget: "text" }
-
-      - label: "Galería"
-        name: "gallery"
-        widget: "list"
-        field: { label: "Imagen", name: "image", widget: "image" }
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
