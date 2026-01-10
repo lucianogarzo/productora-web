@@ -1,5 +1,3 @@
-window.CMS_MANUAL_INIT = true;
-
 CMS.init({
   config: {
     backend: {
@@ -8,10 +6,8 @@ CMS.init({
       branch: "main",
       auth_type: "pkce"
     },
-
     media_folder: "assets/uploads",
     public_folder: "/assets/uploads",
-
     collections: [
       {
         name: "projects",
