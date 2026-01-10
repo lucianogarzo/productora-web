@@ -1,9 +1,12 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: lucianogarzo/productora-web
   branch: main
+  auth_type: pkce
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
+
 collections:
   - name: "projects"
     label: "Projects"
@@ -12,5 +15,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Video URL", name: "video", widget: "string" }
-      - { label: "Cover Image", name: "cover", widget: "image" }
+      - { label: "Language", name: "lang", widget: "select", options: ["es", "en"] }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image" }
+      - { label: "Video URL (Vimeo)", name: "video", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
