@@ -1,3 +1,5 @@
+site_url: https://celebrated-palmier-7785b3.netlify.app/admin/index.html
+
 backend:
   name: github
   repo: lucianogarzo/productora-web
